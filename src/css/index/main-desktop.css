@@ -24,18 +24,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
-.header__inner {
-    background-image: url("../../images/index/panda-background.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
+header {
+    background-color: black;
 }
-.header__top {
+.header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 17px 220px;
-    background-color: black;
 }
 .header__menu {
     display: flex;
@@ -57,7 +53,12 @@
 .header__designed-by {
     cursor: default;
 }
-.header__bottom {
+.stream {
+    background-image: url("../../images/index/panda-background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.stream__inner {
     padding: 12px 0;
     padding-right: 319px;
     padding-bottom: 100px;
