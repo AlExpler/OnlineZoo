@@ -288,7 +288,58 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+}
+.feed__card {
+    align-self: flex-start;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: -60px;
     gap: 30px;
+}
+.feed__box {
+    width: 168px;
+    height: 168px;
+    background-color: #FFFFFF;
+
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feed__card-text {
+    color: rgb(51, 59, 65);
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+}
+.feed__card-text:nth-child(2) {
+    width: 160px
+}
+.feed__arrow {
+    width: 71px;
+    height: 37px;
+    background-image: url(../../images/index/arrow.png);
+}
+.feed__button {
+    margin-top: 120px;
+    border-radius: 25px;
+    background-image: var(--orange-bg);
+    width: 298px;
+    height: 54px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
 }
 
 .footer__inner {
