@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --orange-bg: linear-gradient(114deg, #F9804B 1.49%, #FE9013 101.44%);
+    --orange: #F9804B;
+    --green: #4B9200;
+    --yellow: #FFEE2E;
+    --orange-grd-bg: linear-gradient(316deg, rgba(254, 210, 144, 0.70) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.70) 106.36%), linear-gradient(316deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(316deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    --orange-grd: #FED290;
+    --pink-grd-bg: linear-gradient(316deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(316deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    --pink-grd: #FEBDAB;
+    --red: #D31414;
+    --black-blue: #333B41;
+    --gray: #767474;
+    --gray-smoky: #ABABAB;
+    --light-gray: #F1F3F2;
+    --glass-white: #FDFDFF;
+}
+.container {
+    margin: 0 auto;
+    width: 1600px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: black;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 220px;
+}
+.header__menu {
+    display: flex;
+    justify-items: left;
+    align-items: center;
+    gap: 54px;
+}
+.header__menu-text {
+    transition: 0.3s;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+}
+.header__menu-text:hover {
+    color: var(--orange);
+
+    transition: 0.3s;
+}
+.header__designed-by {
+    cursor: default;
+}
+
+.footer {
+    background-color: #111115;
+}
+.footer__inner {
+    padding: 40px 220px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__section {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+}
+.footer__section:first-child {
+    margin-right: 101px;
+}
+.footer__logo {
+    margin-bottom: 67px;
+}
+.footer__socials {
+    margin-top: 47px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.footer__social {
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 140%;
+    font-size: 16px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: left;
+    padding: 5px auto;
+}
+.footer__social-logo-bg {
+    background-color: #6A6A6C;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+
+    margin-right: 12px;
+}
+.footer__donate-button {
+    background: var(--orange-bg);
+    border-radius: 5px;
+    width: 298px;
+    height: 54px;
+    border: 0px solid;
+    margin-bottom: 44px;
+
+    color: #FFFFFF;
+    font-size: 16px;
+    letter-spacing: 5%;
+    line-height: 140%;
+    font-weight: 500;
+}
+.footer__section:nth-child(2) {
+    flex-flow: column-reverse nowrap;
+    margin-right: 32px;
+}
+.footer__menu {
+    display: flex;
+}
+.footer__menu-text {
+    transition: 0.3s;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 58px;
+}
+.footer__menu-text:last-child {
+    margin-right: 0;
+    width: 80px;
+}
+.footer__menu-text:hover {
+    color: var(--orange);
+    transition: 0.3s;
+}
+.footer__sub-title {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 14px;
+}
+.footer__email {
+    display: flex;
+}
+.footer__email-type {
+    border: 0.7px solid var(--orange);
+    border-radius: 2px;
+    background: none;
+    width: 228px;
+    height: 42px;
+
+    color: #BDBDBD;
+    line-height: 140%;
+    padding-left: 10px;
+    font-size: 16px;
+
+    margin-right: 10px;
+}
+.footer__email-submit {
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    background: var(--light-gray); 
+    width: 129px;
+    height: 42px;
+
+    color: var(--green);
+    font-size: 16px;
+    line-height: 140%;
+}
+.footer__credits {
+    display: flex;
+    justify-content: right;
+}
+.footer__designed-by {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 250;
+    line-height: 150%;
+}
