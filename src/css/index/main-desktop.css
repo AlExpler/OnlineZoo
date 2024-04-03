@@ -18,7 +18,7 @@
 }
 .container {
     margin: 0 auto;
-    width: 1600px;
+    max-width: 1600px;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -40,15 +40,13 @@ header {
     gap: 54px;
 }
 .header__menu-text {
-    transition: 0.3s;
     color: #FFFFFF;
     font-weight: 500;
     font-size: 16px;
+    user-select: none;
 }
 .header__menu-text:hover {
     color: var(--orange);
-
-    transition: 0.3s;
 }
 .header__designed-by {
     cursor: default;
@@ -103,6 +101,15 @@ header {
     color: #FFFFFF;
     font-weight: 500;
     font-size: 16px;
+    user-select: none;
+
+    cursor: pointer;
+}
+.stream__watch-link:hover {
+    background: var(--orange);
+}
+.stream__watch-link:active {
+    background: var(--green);
 }
 
 .backstage__inner {
@@ -125,16 +132,6 @@ header {
 .backstage__bg-down {
     display: flex;
     justify-content: space-between;
-}
-.backstage__arrow {
-    width: 62px;
-    height: 62px;
-}
-.backstage__arrow--left {
-    background: url('../../icons/index/arrow-left.svg');
-}
-.backstage__arrow--right {
-    background: url('../../icons/index/arrow-right.svg');
 }
 .backstage__how-it-works {
     display: flex;
@@ -182,6 +179,27 @@ header {
     gap: 30px;
     margin-top: 180px;
 }
+.backstage__arrow {
+    font-size: 20px;
+    background-image: var(--orange-bg);
+    color: white;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0 solid;
+    border-radius: 100%;
+    align-self: center;
+    cursor: pointer;
+    user-select: none;
+}
+.backstage__arrow:hover {
+    background: var(--orange);
+}
+.backstage__arrow:active {
+    background: var(--green);
+}
 .backstage__card-group {
     display: flex;
     flex-flow: column nowrap;
@@ -193,6 +211,7 @@ header {
     flex-flow: column nowrap;
     border: 1px solid var(--orange);
     border-radius: 5px;
+    background-color: white;
 }
 .backstage__animal-desc {
     padding: 8px 16px;
@@ -210,6 +229,25 @@ header {
     font-weight: 300;
     font-size: 15px;
     line-height: 120%;
+}
+.backstage__background {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+.backstage__plant-ur {
+    align-self: flex-end;
+    margin-top: -100px;
+}
+.backstage__bottom-bg {
+    margin-top: 579px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.backstage__plant-br {
+    align-self: flex-end;
 }
 
 .feed {
@@ -340,6 +378,15 @@ header {
     line-height: 140%;
     letter-spacing: 0%;
     text-transform: uppercase;
+
+    cursor: pointer;
+    user-select: none;
+}
+.feed__button:hover {
+    background: var(--orange);
+}
+.feed__button:active {
+    background: var(--green);
 }
 
 .testimonials__inner {
@@ -430,6 +477,15 @@ header {
     letter-spacing: 5%;
     line-height: 140%;
     font-weight: 500;
+
+    cursor: pointer;
+    user-select: none;
+}
+.testimonials__button:hover {
+    background: var(--orange);
+}
+.testimonials__button:active {
+    background: var(--green);
 }
 
 .footer {
@@ -492,6 +548,15 @@ header {
     letter-spacing: 5%;
     line-height: 140%;
     font-weight: 500;
+
+    cursor: pointer;
+    user-select: none;
+}
+.footer__donate-button:hover {
+    background: var(--orange);
+}
+.footer__donate-button:active {
+    background: var(--green);
 }
 .footer__section:nth-child(2) {
     flex-flow: column-reverse nowrap;
@@ -501,7 +566,6 @@ header {
     display: flex;
 }
 .footer__menu-text {
-    transition: 0.3s;
     color: #FFFFFF;
     font-weight: 400;
     font-size: 16px;
@@ -513,7 +577,6 @@ header {
 }
 .footer__menu-text:hover {
     color: var(--orange);
-    transition: 0.3s;
 }
 .footer__sub-title {
     color: #FFFFFF;
@@ -539,8 +602,16 @@ header {
 
     margin-right: 10px;
 }
+.footer__email-type--accepted {
+    border-color: var(--green);
+    color: var(--green);
+}
+.footer__email-type--error {
+    border-color: var(--red);
+    color: var(--green);
+}
 .footer__email-submit {
-    border: 1px solid var(--green);
+    border: 1px solid black;
     border-radius: 5px;
     background: var(--light-gray); 
     width: 129px;
@@ -549,6 +620,17 @@ header {
     color: var(--green);
     font-size: 16px;
     line-height: 140%;
+
+    cursor: pointer;
+    user-select: none;
+}
+.footer__email-submit:hover {
+    color: var(--green);
+    border-color: var(--green);
+}
+.footer__email-submit--error {
+    color: var(--green);
+    border-color: var(--red);
 }
 .footer__credits {
     display: flex;
