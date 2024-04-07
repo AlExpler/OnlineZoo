@@ -143,6 +143,7 @@ a:hover {
     margin-top: 48px;
 }
 .donate__amount {
+
 }
 .donate__bar {
     background-color: #404950;
@@ -158,8 +159,9 @@ a:hover {
     flex-flow: column nowrap;
 }
 .donate__fixed-amount-apply {
-    width: 10px;
+    width: 5px;
     height: 12px;
+    display: inline-block;
     border: 0 solid transparent;
     border-radius: 100%;
     background-color: #FFEE2E;
@@ -167,10 +169,30 @@ a:hover {
     margin-top: -5px;
     cursor: pointer;
     transition: 0.4s;
+    z-index: 3;
+}
+.donate__fixed-amount-apply--active::before {
+    display: inline-block;
+    position: inherit;
+    z-index: 2;
+    border: 2px solid var(--orange);
+    border-radius: 100%;
+    content: "";
+    width: 22.95px;
+    height: 22.95px;
 }
 .donate__fixed-amount-apply:hover {
     background-color: #fff58c;
     transition: 0.1s;
+}
+.donate__fixed-amount-number {
+    color: var(--black-blue);
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+}
+.donate__fixed-amount-number--active {
+    color: var(--orange);
 }
 
 .footer {
