@@ -18,7 +18,7 @@
 }
 .container {
     margin: 0 auto;
-    width: 1600px;
+    max-width: 1600px;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -26,6 +26,9 @@ body {
 
 header {
     background-color: black;
+}
+a:hover {
+    color: var(--green);
 }
 .header__inner {
     display: flex;
@@ -40,18 +43,134 @@ header {
     gap: 54px;
 }
 .header__menu-text {
-    transition: 0.3s;
     color: #FFFFFF;
     font-weight: 500;
     font-size: 16px;
+    user-select: none;
 }
 .header__menu-text:hover {
     color: var(--orange);
-
-    transition: 0.3s;
 }
 .header__designed-by {
     cursor: default;
+}
+
+.donate {
+    background: var(--orange-grd-bg);
+}
+.donate__inner {
+    padding: 40px 220px 180px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.donate__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: white;
+
+    margin-bottom: 10px;
+}
+.donate__desc {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    line-height: 120%;
+
+    margin-bottom: 40px;
+}
+.donate__inf-title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: var(--orange);
+
+    margin-bottom: 60px;
+}
+.donate__pay-section {
+    background-color: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(4px);
+    border: 0 solid transparent;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 40px 92px 62px;
+}
+.donate__pay-title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color: var(--orange);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.donate__pay-desc {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+}
+.donate__panda-diet {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.donate__counter {
+    margin-right: 11px;
+}
+.donate__number {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 11px;
+}
+.donate__counter-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--black-blue);
+}
+.donate__cross {
+    color: var(--black-blue);
+    font-size: 14px;
+    margin-right: 64px;
+}
+.donate__amount-tilte {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 48px;
+}
+.donate__amount {
+}
+.donate__bar {
+    background-color: #404950;
+    padding: 8px 26px;
+    display: flex;
+    width: 100%;
+    height: 1px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.donate__fixed-amount {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.donate__fixed-amount-apply {
+    width: 10px;
+    height: 12px;
+    border: 0 solid transparent;
+    border-radius: 100%;
+    background-color: #FFEE2E;
+    position: absolute;
+    margin-top: -5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.donate__fixed-amount-apply:hover {
+    background-color: #fff58c;
+    transition: 0.1s;
 }
 
 .footer {
@@ -101,6 +220,9 @@ header {
 
     margin-right: 12px;
 }
+.footer__social-logo-bg--hover-event {
+    background-color: var(--green);
+}
 .footer__donate-button {
     background: var(--orange-bg);
     border-radius: 5px;
@@ -114,6 +236,15 @@ header {
     letter-spacing: 5%;
     line-height: 140%;
     font-weight: 500;
+
+    cursor: pointer;
+    user-select: none;
+}
+.footer__donate-button:hover {
+    background: var(--orange);
+}
+.footer__donate-button:active {
+    background: var(--green);
 }
 .footer__section:nth-child(2) {
     flex-flow: column-reverse nowrap;
@@ -123,7 +254,6 @@ header {
     display: flex;
 }
 .footer__menu-text {
-    transition: 0.3s;
     color: #FFFFFF;
     font-weight: 400;
     font-size: 16px;
@@ -135,7 +265,6 @@ header {
 }
 .footer__menu-text:hover {
     color: var(--orange);
-    transition: 0.3s;
 }
 .footer__sub-title {
     color: #FFFFFF;
@@ -161,8 +290,16 @@ header {
 
     margin-right: 10px;
 }
+.footer__email-type--accepted {
+    border-color: var(--green);
+    color: var(--green);
+}
+.footer__email-type--error {
+    border-color: var(--red);
+    color: var(--green);
+}
 .footer__email-submit {
-    border: 1px solid var(--green);
+    border: 1px solid black;
     border-radius: 5px;
     background: var(--light-gray); 
     width: 129px;
@@ -171,6 +308,17 @@ header {
     color: var(--green);
     font-size: 16px;
     line-height: 140%;
+
+    cursor: pointer;
+    user-select: none;
+}
+.footer__email-submit:hover {
+    color: var(--green);
+    border-color: var(--green);
+}
+.footer__email-submit--error {
+    color: var(--green);
+    border-color: var(--red);
 }
 .footer__credits {
     display: flex;
@@ -181,4 +329,10 @@ header {
     font-size: 16px;
     font-weight: 250;
     line-height: 150%;
+
+    cursor: pointer;
+}
+.footer__designed-by:hover {
+    text-decoration: underline;
+    color: var(--green);
 }

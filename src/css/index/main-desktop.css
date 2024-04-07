@@ -693,4 +693,5 @@ a:hover {
 }
 .footer__designed-by:hover {
     text-decoration: underline;
+    color: var(--green);
 }
