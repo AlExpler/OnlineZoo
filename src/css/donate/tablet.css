@@ -1,0 +1,149 @@
+@media screen and (max-width: 660px) {
+    .container{
+        max-width: 320px;
+    }
+    .header__content-button{
+        display: none;
+    }
+    .header__bottom{
+        padding-top: 56px;
+    }
+    .header__content-title{
+        width: 119px;
+        height: 119px;
+        margin-bottom: 45px;
+        p{
+            width: 128.13px;
+            height: 102.44px;
+            top: 18px;
+            left: 15px;
+            font-size: 28px;
+        }
+    }
+
+    .reopening__title{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .reopening__text{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .pick_and_feed__inner{
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 30px;
+    }
+    .main{
+        padding-bottom: 11px;
+    }
+    .pick_and_feed__donation_info{
+        font-size: 24px;
+    }
+    .pick_and_feed__info-title{
+        font-size: 24px;
+    }
+    .pick_and_feed__info-text{
+        font-size: 16px;
+    }
+    .pick_and_feed__diet_calculator-panda img{
+        width: 151.4px;
+        height: 111.92px;
+    }
+    .pick_and_feed__diet_calculator-result{
+        font-size: 40px;
+    }
+    .pick_and_feed__diet_calculator-text{
+        font-size: 9px;
+    }
+    .pick_and_feed__diet_calculator-sign img{
+        width: 7.89px;
+        height: 7.89px;
+    }
+    .pick_and_feed__progress_bar-points{
+        width: 285px;
+    }
+    .pick_and_feed__progress_bar-prices{
+        width: 265px;
+        margin-left: 10px;
+    }
+    .pick_and_feed__progress_bar-price{
+        font-size: 13px;
+    }
+    .pick_and_feed__progress_bar-point-inner{
+        width: 5px;
+        height: 5px;
+    }
+    .pick_and_feed__progress_bar-point-after{
+        width: 20px;
+        height: 20px;
+        border-width: 1px;
+        left:2px;
+        top:3px;
+    }
+    .pick_and_feed__progress_bar-point-before {
+        width: 11.5px;
+        height: 11.5px;
+        border-width: 1px;
+        left:2px;
+        top:3px;
+    }
+    .pick_and_feed__share_with_friends{
+        text-align: center;
+        font-size: 18px;
+    }
+    .pick_and_feed__custom-donation{
+        width: 240px;
+    }
+
+    .footer__media-660px{
+        display: none;
+    }
+    .footer__top-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .footer__media-320px{
+        display: flex;
+        align-items: center;
+        margin-bottom: 36px;
+    }
+    .footer__main{
+        width: 136px;
+    }
+    .footer__link-home{
+        border: none;
+        width: 128px;
+        height: 30px;
+    }
+    .footer__link-home-text{
+        width: 128px;
+    }
+    .footer .bamboo{
+        top: 1px;
+        left: 76px;
+    }
+    .footer__media-link img{
+        margin-right: 30px;
+    }
+    .footer__media-link:last-child img{
+        margin-right: 0;
+    }
+    .footer__donate{
+        margin-bottom: 30px;
+    }
+    .footer__bottom{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .footer__credits{
+        margin-bottom: 30px;
+    }
+    .footer__navigation{
+        gap: 30px;
+        margin-right: 0;
+        align-self: center;
+    }
+}
