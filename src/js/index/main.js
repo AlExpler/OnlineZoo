@@ -29,30 +29,25 @@ subscribeField.addEventListener("input", event=>{
 
 // Scroll Block
 const burgerToggle = document.querySelector('#header__burger_menu-toggle');
-const keys = {37: 1, 38: 1, 39: 1, 40: 1};
-
-function preventDefault(event) {
-    e.preventDefault();
-}
-  
-function preventDefaultForScrollKeys(event) {
-    if (keys[event.keyCode]) {
-      preventDefault(event);
-      return false;
-    }
-}
-
 function disableScroll() {
-    window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-    window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-    window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
-    window.addEventListener('keydown', preventDefaultForScrollKeys, false);
-}
-function enableScroll() {
-    window.removeEventListener('DOMMouseScroll', preventDefault, false);
-    window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
-    window.removeEventListener('touchmove', preventDefault, wheelOpt);
-    window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+    // Get the current page scroll position in the vertical direction
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+   
+    window.onscroll = function() {
+        window.scrollTo(scrollLeft, scrollTop);
+    };
 }
 
-(burgerToggle.checked?disableScroll():enableScroll());
+function enableScroll() {
+    window.onscroll = function() {};
+}
+
+burgerToggle.addEventListener("click", (event) => {
+    if (burgerToggle.checked === true) {
+        disableScroll();
+    }
+    else {
+        enableScroll();
+    }
+});

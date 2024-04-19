@@ -109,3 +109,27 @@ progressBarPrices.addEventListener('click', event=>{
     }
     recalc();
 })
+
+const burgerToggle = document.querySelector('#header__burger_menu-toggle');
+function disableScroll() {
+    // Get the current page scroll position in the vertical direction
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+   
+    window.onscroll = function() {
+        window.scrollTo(scrollLeft, scrollTop);
+    };
+}
+
+function enableScroll() {
+    window.onscroll = function() {};
+}
+
+burgerToggle.addEventListener("click", (event) => {
+    if (burgerToggle.checked === true) {
+        disableScroll();
+    }
+    else {
+        enableScroll();
+    }
+});

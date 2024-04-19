@@ -1,149 +1,186 @@
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 1038px) {
     .container{
-        max-width: 320px;
+        max-width: 640px;
     }
-    .header__content-button{
+    .container-header-top{
+        height: unset;
+    }
+    .header__menu-list{
+        margin-left: 20px;
+        height: unset;
+        width: 47px;
+    }
+    .header__menu-burger{
+        margin-right: 20px;
+    }
+    .header__menu-list .header__link-home{
+        opacity: 0;
+        height: 15px;
+    }
+    .header__link-home{
+        height: unset;
+        margin: 12px 24px;
+    }
+    .header__link-home .header__link-home-text{
+        width: 47px;
+        font-size: 20px;
+        color: orange;
+        margin: 3.55px 0 3.55px;
+        height: unset;
+    }
+    .header__link-home .bamboo{
+        top: 33px;
+        left: -19px;
+    }
+    .header__link-home .bamboo img {
+        width: 45px;
+        height: 13px;
+    }
+    .header__link:not(:first-child){
         display: none;
     }
-    .header__bottom{
-        padding-top: 56px;
+    .header__copyright{
+        display: none;
+    }
+    .header__burger_menu{
+        display: block;
+    }
+    .header__content{
+        margin-right: 60px;
     }
     .header__content-title{
-        width: 119px;
-        height: 119px;
-        margin-bottom: 45px;
-        p{
-            width: 128.13px;
-            height: 102.44px;
-            top: 18px;
-            left: 15px;
-            font-size: 28px;
-        }
+        height: 237px;
+        width: 237px;
+        margin-bottom: 0;
     }
+    .header__content-title p{
 
-    .reopening__title{
-        font-size: 24px;
-        margin-bottom: 20px;
+        width: 256px;
+        height: 204px;
+        top: 37px;
+        left: 33px;
+        font-size: 54.29px;
+        letter-spacing: 0;
     }
-    .reopening__text{
-        font-size: 16px;
-        font-weight: 500;
+    .header__content-button{
+        margin-left: -330px;
+        margin-bottom: 40px;
     }
-    .pick_and_feed__inner{
-        padding-right: 10px;
-        padding-left: 10px;
-        padding-bottom: 30px;
-    }
-    .main{
-        padding-bottom: 11px;
-    }
-    .pick_and_feed__donation_info{
-        font-size: 24px;
-    }
-    .pick_and_feed__info-title{
-        font-size: 24px;
-    }
-    .pick_and_feed__info-text{
-        font-size: 16px;
-    }
-    .pick_and_feed__diet_calculator-panda img{
-        width: 151.4px;
-        height: 111.92px;
-    }
-    .pick_and_feed__diet_calculator-result{
-        font-size: 40px;
-    }
-    .pick_and_feed__diet_calculator-text{
-        font-size: 9px;
-    }
-    .pick_and_feed__diet_calculator-sign img{
-        width: 7.89px;
-        height: 7.89px;
-    }
-    .pick_and_feed__progress_bar-points{
-        width: 285px;
-    }
-    .pick_and_feed__progress_bar-prices{
-        width: 265px;
-        margin-left: 10px;
-    }
-    .pick_and_feed__progress_bar-price{
-        font-size: 13px;
-    }
-    .pick_and_feed__progress_bar-point-inner{
-        width: 5px;
-        height: 5px;
-    }
-    .pick_and_feed__progress_bar-point-after{
-        width: 20px;
-        height: 20px;
-        border-width: 1px;
-        left:2px;
-        top:3px;
-    }
-    .pick_and_feed__progress_bar-point-before {
-        width: 11.5px;
-        height: 11.5px;
-        border-width: 1px;
-        left:2px;
-        top:3px;
-    }
-    .pick_and_feed__share_with_friends{
-        text-align: center;
-        font-size: 18px;
-    }
-    .pick_and_feed__custom-donation{
-        width: 240px;
-    }
-
-    .footer__media-660px{
+    .about__backstage-image{
         display: none;
     }
-    .footer__top-inner{
+    .container-backstage{
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+    .about__backstage-content-text:not(:last-child){
+        margin-bottom: 30px;
+    }
+    .about__backstage-content-subtitle{
+        margin-bottom: 20px;
+    }
+    .about__backstage-content{
+        margin-left: 20px;
+    }
+    .about__flower:nth-child(2){
+        width:231px;
+        height: 476px;
+        display: block;
+        top: -65px;
+    }
+    .about__card{
+        width: 285px !important;
+        margin-left: 20px;
+        margin-right: 0 !important;
+    }
+    .about__card-image{
+        width: 281px;
+        height: 281px;
+    }
+    .about__button-cards-next{
+        left: 58%;
+    }
+    .about__button-cards-prev{
+        left: 43%;
+    }
+    .about__flower:nth-child(2){
+        top: 0;
+    }
+    .about__flower:not(:nth-child(2)){
+        bottom: 0;
+    }
+    .container-pick-and-feed{
+        max-width: 608px;
+        padding-right: 32px;
+    }
+    .container-pick-and-feed{
+        padding-right: 32px;
+    }
+    .pick_and_feed__info-text:not(:nth-child(5)){
+        margin-left: 20px
+    }
+    .pick_and_feed__info-subtitle{
+        margin-left: 20px;
+    }
+    .pick_and_feed__process-steps{
+        position: relative;
+        gap: 15px;
+    }
+    .pick_and_feed__process-arrow img:first-child{
+        display: none;
+    }
+    .pick_and_feed__process-arrow img:last-child{
+        position: absolute;
+        display: block;
+        transform: translateX(-50px) translateY(-15px);
+    }
+    .testimonials{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .testimonial__inner{
+        overflow-y: hidden;
+        height: 72px;
+    }
+    .container-testimonials{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 auto;
     }
-    .footer__media-320px{
+    .reviews__feedback{
+        margin-bottom: 80px;
+    }
+    .reviews__flower{
+        width: 200px;
+        height: 200px;
+        right: -84px;
+        bottom: -68px;
+    }
+    .reviews__title{
+        margin-top: 60px;
+    }
+    .footer__media-660px{
+        display: block;
+        margin: 0;
+    }
+    .footer__bottom .footer__media{
+        display: none;
+    }
+    .footer__top{
         display: flex;
-        align-items: center;
-        margin-bottom: 36px;
+        justify-content: space-between;
     }
-    .footer__main{
-        width: 136px;
+    .footer{
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
-    .footer__link-home{
-        border: none;
-        width: 128px;
-        height: 30px;
-    }
-    .footer__link-home-text{
-        width: 128px;
-    }
-    .footer .bamboo{
-        top: 1px;
-        left: 76px;
-    }
-    .footer__media-link img{
-        margin-right: 30px;
-    }
-    .footer__media-link:last-child img{
-        margin-right: 0;
-    }
-    .footer__donate{
-        margin-bottom: 30px;
-    }
-    .footer__bottom{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .footer__credits{
-        margin-bottom: 30px;
+    .footer .designer{
+        margin-bottom: 10px;
     }
     .footer__navigation{
-        gap: 30px;
-        margin-right: 0;
-        align-self: center;
+        margin-right: 65px;
+    }
+    .footer__subscribe{
+        display: none;
     }
 }
