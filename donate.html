@@ -1,13 +1,234 @@
 <!DOCTYPE html>
 <html lang="en_US">
     <head>
-        <meta charset="UTF-8">
-        <!-- title -->
-        <title>Online Zoo | Donate</title>
-        <!-- styles -->
-        <link rel="stylesheet" href="styles/style.css" type="text/css">
+        <meta charset="UTF-8" />
+		<title>Online Zoo | Main Page</title> <!-- Title -->
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./src/css/donate/reset.css" type="text/css"> <!-- Reset -->
+		<link rel="stylesheet" href="./src/css/donate/main-desktop.css" type="text/css"> <!-- Desktop -->
+		<link rel="stylesheet" href="src/css/donate/small-desktop.css"> <!-- Laptop -->
+		<link rel="stylesheet" href="src/css/donate/tablet.css"> <!-- Tablet-->
+		<link rel="stylesheet" href="src/css/donate/mobile.css"> <!-- Phone -->
+
+		<!-- Addons-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide-core.min.css" integrity="sha512-cSogJ0h5p3lhb//GYQRKsQAiwRku2tKOw/Rgvba47vg0+iOFrQ94iQbmAvRPF5+qkF8+gT7XBct233jFg1cBaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/> <!-- Connecting SplideJS -->
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script> <!-- Connecting SplideJS -->
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script> <!-- Connecting SplideJS -->
     </head>
     <body>
-        <script src="./js/main.js"></script>
+        <header class="header">
+            <div class="header__top">
+				<div class="container container-header-top">
+					<ul class="header__menu-list">
+						<li class="header__link header__link-home">
+							<a href="./index.html"><img src="src/icons/index/logo.svg" alt="bamboo"></a>
+						</li>
+						<li class="header__link"><a href="./index.html">About</a></li>
+						<li class="header__link"><a href="#">Map</a></li>
+						<li class="header__link"><a href="#">Zoos</a></li>
+						<li class="header__link"><a href="./donate.html">Donate</a></li>
+						<li class="header__link"><a href="#">Contact us</a></li>
+					</ul>
+					<div class="header__copyright">Designed by ©</div>
+					<div class="header__burger_menu">
+						<input id="header__burger_menu-toggle" type="checkbox" />
+						<label class="menu__btn" for="header__burger_menu-toggle">
+							<span></span>
+						</label>
+						<ul class="header__burger_menu-box">
+							<li class="header__link header__link-home">
+								<a href="./index.html">
+									<img src="src/icons/index/orange-logo.svg" alt="bamboo">
+								</a>
+							</li>
+							<li><a class="header__burger_menu-item" href="./index.html">About</a></li>
+							<li><a class="header__burger_menu-item" href="#">Maps</a></li>
+							<li><a class="header__burger_menu-item" href="#">Zoos</a></li>
+							<li><a class="header__burger_menu-item" href="./donate.html">Donate</a></li>
+							<li><a class="header__burger_menu-item" href="#">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+            <div class="header__bottom"></div>
+        </header>
+        
+        <main class="main">
+            <section class="reopening">
+                <div class="container">
+                    <h1 class="reopening__title">THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h1>
+                    <div class="reopening__text">Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and private events cancelled or postponed for additional months. We need you now more than ever to help ensure that we overcome these challenges. We have been actively raising funds in the community, and we are grateful for the generosity.  But much more support is still needed, and we need your help! Please consider a gift today – no matter what size – to help us sustain our mission.</div>
+                </div>
+            </section>
+            <section class="pick_and_feed">
+                <div class="container">
+                    <h2 class="pick_and_feed__donation_info">
+                        Donation Information
+                    </h2>
+                    <div class="pick_and_feed__inner">
+                        <div class="pick_and_feed__info">
+                            <div class="pick_and_feed__info-title">
+                                Pick and feed a friend
+                            </div>
+                            <div class="pick_and_feed__info-text">
+                                We know the animals bring you joy, and in these extraordinary times, we’re glad.
+                            </div>
+                        </div>
+                        <div class="pick_and_feed__diet_calculator">
+                            <div class="pick_and_feed__diet_calculator-inner">
+                                <div class="pick_and_feed__diet_calculator-result">0</div>
+                                <div class="pick_and_feed__diet_calculator-text">Panda diet for the day.</div>
+                            </div>
+                            <div class="pick_and_feed__diet_calculator-sign">❌</div>
+                            <div class="pick_and_feed__diet_calculator-panda"><img src="src/images/donate/animals-widget.png" alt="panda"></div>
+                        </div>
+                        <div class="pick_and_feed__progress_bar">
+                            <div class="pick_and_feed__progress_bar-label">
+                                Amount
+                            </div>
+                            <div class="pick_and_feed__progress_bar-points">
+                                <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-before"></div><div class="pick_and_feed__progress_bar-point-inner"></div><div class="pick_and_feed__progress_bar-point-after"></div></div>
+                                <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-before"></div><div class="pick_and_feed__progress_bar-point-inner"></div><div class="pick_and_feed__progress_bar-point-after"></div></div>
+                                <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-before"></div><div class="pick_and_feed__progress_bar-point-inner"></div><div class="pick_and_feed__progress_bar-point-after"></div></div>
+                                <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-before"></div><div class="pick_and_feed__progress_bar-point-inner"></div><div class="pick_and_feed__progress_bar-point-after"></div></div>
+                                <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-before"></div><div class="pick_and_feed__progress_bar-point-inner"></div><div class="pick_and_feed__progress_bar-point-after"></div></div>
+                                <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-before"></div><div class="pick_and_feed__progress_bar-point-inner"></div><div class="pick_and_feed__progress_bar-point-after"></div></div>
+                                <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-before"></div><div class="pick_and_feed__progress_bar-point-inner"></div><div class="pick_and_feed__progress_bar-point-after"></div></div>
+                                <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-before"></div><div class="pick_and_feed__progress_bar-point-inner"></div><div class="pick_and_feed__progress_bar-point-after"></div></div>
+                            </div>
+                            <div class="pick_and_feed__progress_bar-prices">
+                                <div class="pick_and_feed__progress_bar-price">$5000</div>
+                                <div class="pick_and_feed__progress_bar-price">$2000</div>
+                                <div class="pick_and_feed__progress_bar-price">$1000</div>
+                                <div class="pick_and_feed__progress_bar-price">$500</div>
+                                <div class="pick_and_feed__progress_bar-price">$250</div>
+                                <div class="pick_and_feed__progress_bar-price">$100</div>
+                                <div class="pick_and_feed__progress_bar-price">$50</div>
+                                <div class="pick_and_feed__progress_bar-price">$25</div>
+                            </div>
+                        </div>
+                        <form class="pick_and_feed__custom-donation" name="pick_and_feed__custom-donation">
+                            <input type="text" name="pick_and_feed__custom-donation-field" id="pick_and_feed__custom-donation-field"
+                            placeholder="Another amount">
+                            <img src="src/icons/donate/Vector.png" alt="dollar sign">
+                        </form>
+                        <form class="pick_and_feed__donation-type" name="pick_and_feed__donation-type">
+                            <input type="radio" name="pick_and_feed__donation-type-button" id="pick_and_feed__donation-type-monthly">
+                            <label for="pick_and_feed__donation-type-monthly">Monthly</label>
+                            <input type="radio" name="pick_and_feed__donation-type-button" id="pick_and_feed__donation-type-once" checked="checked">
+                            <label for="pick_and_feed__donation-type-once">Once</label>
+                        </form>
+                        <button class="pick_and_feed__button-feed">Feed a friend now</button>
+                        <div class="pick_and_feed__share_with_friends">Share with your friends on social networks</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<div class="footer__top-inner">
+						<div class="footer__main">
+							<div class="footer__link-home">
+								<a href="./index.html"><img src="src/icons/index/logo.svg" alt="bamboo"></a>
+							</div>
+							<div class="footer__subscribe">
+								<h2 class="footer__subscribe-text">Subscribe to our news</h2>
+								<form action="">
+									<input class="footer__input-field" type="text" id="footer__input-field" name="footer__subscribe" placeholder="Enter your email">
+									<input type="submit" class="footer__input-button" value="Submit" disabled>
+								</form>
+								<div class="footer__input-result"></div>
+							</div>
+						</div>
+						<ul class="footer__media-320px">
+							<li class="footer__media-link">
+                                <a href="https://www.facebook.com/">
+                                    <img src="src/icons/index/facebook.svg" alt="Facebook">
+                                </a>
+                            </li>
+                            <li class="footer__media-link">
+                                <a href="https://twitter.com/">
+                                    <img src="src/icons/index/twitter.svg" alt="Twitter">
+                                </a>
+                            </li>
+                            <li class="footer__media-link">
+                                <a href="https://www.instagram.com/">
+                                    <img src="src/icons/index/instagram.svg" alt="Instagram">
+                                </a>
+                            </li>
+                            <li class="footer__media-link">
+                                <a href="https://www.youtube.com/">
+                                    <img src="./assets/images/youtube.svg" alt="Youtube">
+                                </a>
+                            </li>
+						</ul>
+						<button class="footer__donate">Donate for volunteers</button>
+					</div>
+					<ul class="footer__media-660px">
+						<li class="footer__media-link">
+							<a href="https://www.facebook.com/">
+								<img src="src/icons/index/facebook.svg" alt="Facebook">
+							</a>
+						</li>
+						<li class="footer__media-link">
+							<a href="https://twitter.com/">
+								<img src="src/icons/index/twitter.svg" alt="Twitter">
+							</a>
+						</li>
+						<li class="footer__media-link">
+							<a href="https://www.instagram.com/">
+								<img src="src/icons/index/instagram.svg" alt="Instagram">
+							</a>
+						</li>
+						<li class="footer__media-link">
+							<a href="https://www.youtube.com/">
+								<img src="./assets/images/youtube.svg" alt="Youtube">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__bottom">
+					<ul class="footer__media">
+						<li class="footer__media-link">
+							<a href="https://www.facebook.com/">
+								<img src="src/icons/index/facebook.svg" alt="Facebook">
+								<div class="footer__media-text">Facebook</div>
+							</a>
+						</li>
+						<li class="footer__media-link">
+							<a href="https://twitter.com/">
+								<img src="src/icons/index/twitter.svg" alt="Twitter">
+								<div class="footer__media-text">Twitter</div>
+							</a>
+						</li>
+						<li class="footer__media-link">
+							<a href="https://www.instagram.com/">
+								<img src="src/icons/index/instagram.svg" alt="Instagram">
+								<div class="footer__media-text">Instagram</div>
+							</a>
+						</li>
+						<li class="footer__media-link">
+							<a href="https://www.youtube.com/">
+								<img src="src/icons/index/youtube.svg" alt="Youtube">
+								<div class="footer__media-text">Youtube</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="footer__navigation">
+						<li class="footer__navigation-link"><a href="./index.html">About</a></li>
+						<li class="footer__navigation-link"><a href="#">Map</a></li>
+						<li class="footer__navigation-link"><a href="#">Zoos</a></li>
+						<li class="footer__navigation-link"><a href="#">Contact us</a></li>
+					</ul>
+					<div class="footer__credits">
+						<div class="designer">Designed by Alisa Samborskaya<br>©RSSchool & ©Yem Digital 2021</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+        <script src="src/js/donate/main.js"></script>
     </body>
 </html>
