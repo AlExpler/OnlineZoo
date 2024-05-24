@@ -89,13 +89,13 @@
         top: -65px;
     }
     .about__card{
-        width: 285px !important;
-        margin-left: 20px;
+        width: 154px !important;
+        margin-left: 25px;
         margin-right: 0 !important;
     }
     .about__card-image{
-        width: 281px;
-        height: 281px;
+        width: 150px;
+        height: 150px;
     }
     .about__button-cards-next{
         left: 58%;

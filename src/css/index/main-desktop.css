@@ -148,7 +148,7 @@ h3 {
 
     list-style: none;
 
-    background-color: #ECEFF1;
+    background-color: rgba(0, 0, 0, 1);
     box-shadow: -1px 0 6px rgba(0, 0, 0, .2);
 
     transition-duration: .25s;
@@ -158,7 +158,7 @@ h3 {
     display: block;
     padding: 12px 24px;
 
-    color: #333;
+    color: #cfcfcf;
 
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -170,6 +170,7 @@ h3 {
 }
 .header__burger_menu-item:hover {
     background-color: #CFD8DC;
+    color: rgba(0, 0, 0, 1);
 }
 .header__link a {
     text-decoration: none;

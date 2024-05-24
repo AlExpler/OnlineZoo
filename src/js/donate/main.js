@@ -38,7 +38,7 @@ donateButton.style.cursor='not-allowed';
 donateButton.style.background='gray';
 donateField.style.borderColor='#F9804B';
 
-donateField.addEventListener("input", e=>{
+donateField.addEventListener("input", event=>{
     let inputText = event.target.value;
     if(inputText.length===0){
         donateButton.disabled=true;
@@ -69,11 +69,11 @@ function recalc() {
     }
 }
 progressBarPoints.addEventListener('click', event=>{
-    if(!e.target.classList.contains('pick_and_feed__progress_bar-point') 
-        && !e.target.classList.contains('pick_and_feed__progress_bar-point-inner') 
-        && !e.target.classList.contains('pick_and_feed__progress_bar-point-after') 
-        && !e.target.classList.contains('pick_and_feed__progress_bar-point-before')) return;
-    let parent = event.target.parentNode, child=e.target;
+    if(!event.target.classList.contains('pick_and_feed__progress_bar-point') 
+        && !event.target.classList.contains('pick_and_feed__progress_bar-point-inner') 
+        && !event.target.classList.contains('pick_and_feed__progress_bar-point-after') 
+        && !event.target.classList.contains('pick_and_feed__progress_bar-point-before')) return;
+    let parent = event.target.parentNode, child=event.target;
     if(parent.classList.contains('pick_and_feed__progress_bar-point')){
         child = parent;
         parent=parent.parentNode;
